@@ -1,0 +1,162 @@
+{
+	"info": {
+		"_postman_id": "bdb2f2cc-ca74-4b12-bf6b-2ceb8096fc26",
+		"name": "Gectaro",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "31272572"
+	},
+	"item": [
+		{
+			"name": "GET_filter_type_payment-operations",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "2g9IW8VmH_RX7r4ASP0ZLSZMzysQkODK"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.gectaro.com/v2/companies/7323/finance/payment-operations?filter[operation_article_id]=20&filter[type]=1&page=1\n",
+					"protocol": "https",
+					"host": [
+						"api",
+						"gectaro",
+						"com"
+					],
+					"path": [
+						"v2",
+						"companies",
+						"7323",
+						"finance",
+						"payment-operations"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "name_test",
+							"disabled": true
+						},
+						{
+							"key": "balance",
+							"value": "100",
+							"disabled": true
+						},
+						{
+							"key": "filter[operation_article_id]",
+							"value": "20"
+						},
+						{
+							"key": "filter[type]",
+							"value": "1"
+						},
+						{
+							"key": "page",
+							"value": "1\n"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST_organization_settings",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "2g9IW8VmH_RX7r4ASP0ZLSZMzysQkODK"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"url": "https://api.gectaro.com/v2/companies/7323/settings/organizations\n"
+			},
+			"response": []
+		},
+		{
+			"name": "GET_payment-operations",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "2g9IW8VmH_RX7r4ASP0ZLSZMzysQkODK"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": "https://api.gectaro.com/v2/companies/7323/finance/payment-operations/total\n"
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE_organization",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "2g9IW8VmH_RX7r4ASP0ZLSZMzysQkODK"
+					}
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://api.gectaro.com/v2/companies/7323/settings/organizations/21636\n",
+					"protocol": "https",
+					"host": [
+						"api",
+						"gectaro",
+						"com"
+					],
+					"path": [
+						"v2",
+						"companies",
+						"7323",
+						"settings",
+						"organizations",
+						"21636\n"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET_operation_articles",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "2g9IW8VmH_RX7r4ASP0ZLSZMzysQkODK"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": "https://api.gectaro.com/v1/companies/7323/operations-articles\n"
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE_operation",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "2g9IW8VmH_RX7r4ASP0ZLSZMzysQkODK"
+					}
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": "https://api.gectaro.com/v2/companies/7323/finance/payment-operations/798564\n"
+			},
+			"response": []
+		}
+	]
+}
